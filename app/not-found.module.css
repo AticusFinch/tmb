@@ -14,7 +14,7 @@
 
 .notFoundTitle,
 .notFoundDescription {
-  font-size: clamp(1rem, 0.829rem + 0.85vw, 2.2rem);
+  font-size: clamp(0.8rem, 0.686rem + 0.57vw, 1.6rem);
   color: #000;
   line-height: 1;
   margin-bottom: 0.5em;

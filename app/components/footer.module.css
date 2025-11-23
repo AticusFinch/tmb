@@ -1,0 +1,49 @@
+.newsletter {
+  gap: 1.5em;
+}
+
+.footerLogo {
+  width: clamp(7rem, 4.44rem + 12.8vw, 25rem);
+}
+
+.newsletterText {
+  font-size: clamp(1rem, 0.714rem + 1.43vw, 3rem);
+}
+
+.footerBottom {
+  font-size: clamp(0.6rem, 0.515rem + 0.43vw, 1.2rem);
+  background-color: var(--accent);
+  padding: 0.6em 0;
+  color: var(--background);
+  line-height: 1;
+}
+
+.newsletterForm {
+  display: flex;
+  border: 1px solid var(--secondary);
+  border-radius: 3rem;
+}
+
+.newsletterInput {
+  padding: 0 1em;
+}
+
+.newsletterButton {
+  background-color: var(--secondary);
+  color: var(--background);
+  border-radius: 3rem;
+  padding: 0 1em;
+  transition: all 0.3s ease;
+  font-size: clamp(0.6rem, 0.543rem + 0.29vw, 1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  &:hover {
+    background-color: var(--accent);
+  }
+}
+
+@media (min-width: 1024px) {
+  .newsletter {
+    gap: 2em;
+  }
+}

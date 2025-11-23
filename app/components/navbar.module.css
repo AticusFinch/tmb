@@ -9,11 +9,11 @@
 }
 
 .navbarLogoMobile {
-  width: clamp(3.5rem, 1rem + 12.5vw, 9rem);
+  width: clamp(3rem, 1.182rem + 9.09vw, 7rem);
 }
 
 .navbarMobileHamburger {
-  font-size: clamp(1.5rem, 0.727rem + 3.86vw, 3.2rem);
+  font-size: clamp(1.2rem, 0.564rem + 3.18vw, 2.6rem);
 }
 
 .navbarLinks {
