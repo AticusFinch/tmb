@@ -1,0 +1,25 @@
+.notFoundErrorCode {
+  font-size: clamp(5rem, 5rem + 15.625vw, 30rem);
+  font-weight: 700;
+  color: var(--foreground);
+  color: #000;
+  line-height: 1;
+  margin-bottom: 0.1em;
+}
+
+.notFoundImage {
+  width: clamp(3.5rem, 3.5rem + 14.0625vw, 26rem);
+  height: auto;
+}
+
+.notFoundTitle,
+.notFoundDescription {
+  font-size: clamp(1rem, 0.829rem + 0.85vw, 2.2rem);
+  color: #000;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+.notFoundButton {
+  margin-top: 2em;
+}

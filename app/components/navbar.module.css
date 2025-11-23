@@ -1,0 +1,101 @@
+.downloadNav {
+  display: none;
+  background-color: var(--secondary-dark);
+  color: var(--background);
+}
+
+.navbarLogo {
+  display: none;
+}
+
+.navbarLogoMobile {
+  width: clamp(3.5rem, 1rem + 12.5vw, 9rem);
+}
+
+.navbarMobileHamburger {
+  font-size: clamp(1.5rem, 0.727rem + 3.86vw, 3.2rem);
+}
+
+.navbarLinks {
+  display: none;
+}
+
+.navbarDropdown {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  .downloadNav {
+    display: block;
+  }
+
+  .downloadNavContent {
+    font-size: clamp(0.6rem, 0.333rem + 0.42vw, 1rem);
+  }
+
+  .downloadNavText svg {
+    color: var(--misc);
+  }
+
+  .downloadNavLink {
+    font-weight: 300;
+    color: var(--misc);
+  }
+
+  .navbarLogoMobile {
+    display: none;
+  }
+
+  .navbarLogo {
+    display: block;
+    width: clamp(6.5rem, 1.833rem + 7.29vw, 13.5rem);
+  }
+
+  .navbarLinks {
+    display: flex;
+    font-size: clamp(0.7rem, 0.3rem + 0.63vw, 1.3rem);
+    font-weight: 700;
+  }
+
+  .navbarLink {
+    transition: color 0.3s ease;
+    position: relative;
+  }
+
+  .navbarLink:hover {
+    color: var(--accent);
+  }
+
+  .navbarMobileHamburger {
+    display: none;
+  }
+
+  .navbarDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--accent-light);
+    color: var(--background);
+    padding: 0.5em 1em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    min-width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbarDropdown.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbarDropdownItem {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: clamp(0.7rem, 0.3rem + 0.63vw, 1.3rem);
+  }
+}
