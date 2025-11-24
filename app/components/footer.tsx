@@ -1,6 +1,12 @@
+import Link from "next/link";
 import Container from "./container";
 import styles from "./footer.module.css";
 import Image from "next/image";
+
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -39,16 +45,70 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div className={styles.footerContent}>
-          <div className={styles.footerContentLeft}>
-            <h2>About</h2>
-            <p>About</p>
+        <div
+          className={`${styles.footerContent} grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6`}
+        >
+          <div className={styles.footerContentTopLogo}>
+            <Image src="/logo/logo.png" alt="logo" width={694} height={312} />
           </div>
-          <div className={styles.footerContentRight}></div>
+          <div
+            className={`${styles.footerContentTopSocial} sm:col-span-2 lg:col-span-5 flex items-center gap-2`}
+          >
+            <Link href="/">
+              <FaFacebook />
+            </Link>
+            <Link href="/">
+              <FaInstagram />
+            </Link>
+            <Link href="/">
+              <FaYoutube />
+            </Link>
+            <Link href="/">
+              <FaXTwitter />
+            </Link>
+          </div>
+          <div className={styles.footerContentBottomSegment}>
+            <p>info@transbalkan.org</p>
+            <p>Ul. crnogorskih junaka 71</p>
+            <p>81000, Podgorica, Montenegro</p>
+          </div>
+          <div className={styles.footerContentBottomSegment}>
+            <p>Još o našem impresumu:</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            className={`${styles.footerContentBottomSegment} hidden sm:block`}
+          >
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            className={`${styles.footerContentBottomSegment} hidden lg:block`}
+          >
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            className={`${styles.footerContentBottomSegment} hidden lg:block`}
+          >
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            className={`${styles.footerContentBottomSegment} hidden lg:block`}
+          >
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
         </div>
       </Container>
       <div className={`${styles.footerBottom} text-center`}>
-        ©Trans Mreža Balkan {new Date().getFullYear()}
+        <p>©Trans Mreža Balkan {new Date().getFullYear()}</p>
       </div>
     </footer>
   );

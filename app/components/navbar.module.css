@@ -1,6 +1,25 @@
+.navbarContainer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .downloadNav {
   display: none;
   background-color: var(--secondary-dark);
+  color: var(--background);
+  transition: background-color 0.3s ease;
+}
+
+.navbarContentWrapper {
+  width: 100%;
+  background-color: var(--accent);
+  transition: background-color 0.3s ease;
+}
+
+.navbarContent {
+  transition: color 0.3s ease;
+}
+
+.navbarContentWrapper .navbarContent {
   color: var(--background);
 }
 
@@ -14,6 +33,11 @@
 
 .navbarMobileHamburger {
   font-size: clamp(1.2rem, 0.564rem + 3.18vw, 2.6rem);
+  transition: color 0.3s ease;
+}
+
+:global(.scrolled) .navbarMobileHamburger {
+  color: var(--background);
 }
 
 .navbarLinks {
@@ -63,8 +87,21 @@
     position: relative;
   }
 
+  .navbarLink a {
+    color: inherit;
+  }
+
   .navbarLink:hover {
     color: var(--accent);
+  }
+
+  :global(.scrolled) .navbarLink:hover {
+    color: var(--background);
+    opacity: 0.8;
+  }
+
+  :global(.scrolled) .navbarLink a {
+    color: var(--background);
   }
 
   .navbarMobileHamburger {
