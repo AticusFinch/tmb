@@ -8,6 +8,7 @@
   --secondary: #4d4d4d;
   --error: #ff76fe;
   --misc: #ababab;
+  --black: #000000;
 }
 
 @theme inline {

@@ -22,7 +22,7 @@ const alegreyaSans = Alegreya_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "TMB",
+  title: "Trans Mreža Balkan",
   description: "Transgender Network Balkan",
 };
 

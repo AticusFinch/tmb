@@ -24,9 +24,7 @@ const DownloadNav = () => {
 
   return (
     <div
-      className={`${
-        styles.navbarContainer
-      } fixed top-0 left-0 right-0 z-10 w-full ${isScrolled ? "scrolled" : ""}`}
+      className={`${styles.navbarContainer} fixed top-0 left-0 right-0 z-10 w-full`}
     >
       <div className={`${styles.downloadNav}  w-full`}>
         <div

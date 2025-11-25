@@ -36,10 +36,6 @@
   transition: color 0.3s ease;
 }
 
-:global(.scrolled) .navbarMobileHamburger {
-  color: var(--background);
-}
-
 .navbarLinks {
   display: none;
 }
@@ -83,24 +79,49 @@
   }
 
   .navbarLink {
-    transition: color 0.3s ease;
     position: relative;
   }
 
-  .navbarLink a {
+  .navbarLink > a {
     color: inherit;
+    transition: color 0.3s ease;
   }
 
-  .navbarLink:hover {
+  .navbarLink:hover > a {
     color: var(--accent);
   }
 
-  :global(.scrolled) .navbarLink:hover {
+  .navbarContentWrapper .navbarLink > a {
     color: var(--background);
-    opacity: 0.8;
+    transition: color 0.3s ease;
   }
 
-  :global(.scrolled) .navbarLink a {
+  .navbarContentWrapper .navbarLink:hover > a {
+    color: var(--black);
+  }
+
+  .navbarContentWrapper .navbarDropdown {
+    background-color: var(--black);
+  }
+
+  .navbarDropdownItem a {
+    color: var(--background);
+    transition: color 0.3s ease;
+  }
+
+  .navbarDropdownItem a:hover {
+    color: var(--secondary);
+  }
+
+  .navbarContentWrapper .navbarDropdownItem a {
+    color: var(--background);
+  }
+
+  .navbarContentWrapper .navbarDropdownItem a:hover {
+    color: var(--accent);
+  }
+
+  .navbarContentWrapper .navbarMobileHamburger {
     color: var(--background);
   }
 
