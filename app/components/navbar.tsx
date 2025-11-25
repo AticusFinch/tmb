@@ -79,50 +79,56 @@ const DownloadNav = () => {
                   <Link href="/">POČETNA</Link>
                 </li>
                 <li className={styles.navbarLink}>
-                  <Link href="/">TRANSFEMINISTIČKA PLATFORMA</Link>
+                  <Link href="/transfeministicka-platforma">
+                    TRANSFEMINISTIČKA PLATFORMA
+                  </Link>
                 </li>
                 <li className={styles.navbarLink}>
-                  <Link href="/">VIJESTI</Link>
+                  <Link href="/vijesti">VIJESTI</Link>
                 </li>
                 <li
                   className={styles.navbarLink}
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
-                  <Link href="/">PROMJENA DOKUMENATA</Link>
+                  <Link href="/promjena-dokumenata">PROMJENA DOKUMENATA</Link>
                   <ul
                     className={`${styles.navbarDropdown} ${
                       isDropdownOpen ? styles.open : ""
                     }`}
                   >
                     <li className={styles.navbarDropdownItem}>
-                      <Link href="/">Bosna i Hercegovina</Link>
+                      <Link href="/promjena-dokumenata/bosna-i-hercegovina">
+                        Bosna i Hercegovina
+                      </Link>
                     </li>
                     <li className={styles.navbarDropdownItem}>
-                      <Link href="/">Crna Gora</Link>
+                      <Link href="/promjena-dokumenata/crna-gora">
+                        Crna Gora
+                      </Link>
                     </li>
                     <li className={styles.navbarDropdownItem}>
-                      <Link href="/">Hrvatska</Link>
+                      <Link href="/promjena-dokumenata/hrvatska">Hrvatska</Link>
                     </li>
                     <li className={styles.navbarDropdownItem}>
-                      <Link href="/">Srbija</Link>
+                      <Link href="/promjena-dokumenata/srbija">Srbija</Link>
                     </li>
                   </ul>
                 </li>
                 <li className={styles.navbarLink}>
-                  <Link href="/">ZDRAVSTVO</Link>
+                  <Link href="/zdravstvo">ZDRAVSTVO</Link>
                 </li>
                 <li className={styles.navbarLink}>
-                  <Link href="/">PODRŠKA</Link>
+                  <Link href="/podrska">PODRŠKA</Link>
                 </li>
                 <li className={styles.navbarLink}>
-                  <Link href="/">UČIONICA</Link>
+                  <Link href="/ucionica">UČIONICA</Link>
                 </li>
                 <li className={styles.navbarLink}>
-                  <Link href="/">TMBLOG</Link>
+                  <Link href="/tmblog">TMBLOG</Link>
                 </li>
                 <li className={styles.navbarLink}>
-                  <Link href="/">DOGAĐAJI</Link>
+                  <Link href="/dogadjaji">DOGAĐAJI</Link>
                 </li>
               </ul>
               <div className={styles.navbarMobileHamburger}>
