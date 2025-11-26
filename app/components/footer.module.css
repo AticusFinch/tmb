@@ -1,5 +1,6 @@
 .newsletter {
   gap: 1.5em;
+  padding-top: clamp(2rem, 1.429rem + 2.86vw, 6rem);
 }
 
 .footerLogo {

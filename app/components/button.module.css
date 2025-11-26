@@ -2,11 +2,12 @@
   background-color: var(--secondary);
   color: var(--background);
   border-radius: 3rem;
-  padding: 0.2em 0.75em;
+  padding: 0.4em 0.75em;
   transition: all 0.3s ease;
   font-size: clamp(0.6rem, 0.543rem + 0.29vw, 1rem);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 1;
   &:hover {
     background-color: var(--accent);
   }
