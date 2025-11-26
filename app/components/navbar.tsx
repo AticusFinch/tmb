@@ -28,7 +28,7 @@ const DownloadNav = () => {
     >
       <div className={`${styles.downloadNav}  w-full`}>
         <div
-          className={`${styles.downloadNavContent} w-2/4 mx-auto py-1.5 flex items-end gap-1.5`}
+          className={`${styles.downloadNavContent} w-2/4 mx-auto py-1 flex items-end gap-1.5`}
         >
           <h4 className={`${styles.downloadNavText} flex items-center gap-1.5`}>
             <SlMenu />
