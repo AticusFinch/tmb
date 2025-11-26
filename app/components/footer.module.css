@@ -26,29 +26,38 @@
 }
 
 .newsletterInput {
+  flex: 2;
+  min-width: 0;
   padding: 0 1em;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 .newsletterInput::placeholder {
-  font-size: clamp(0.6rem, 0.543rem + 0.29vw, 1rem);
+  font-size: clamp(0.6rem, 0.514rem + 0.43vw, 1.2rem);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .newsletterButton {
+  flex: 1;
+  min-width: 0;
   background-color: var(--secondary);
   color: var(--background);
+  border: none;
   border-radius: 3rem;
   padding: 0.4em 1.6em;
   transition: all 0.3s ease;
-  font-size: clamp(0.6rem, 0.543rem + 0.29vw, 1rem);
+  font-size: clamp(0.6rem, 0.514rem + 0.43vw, 1.2rem);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   line-height: 1;
   cursor: pointer;
-  &:hover {
-    background-color: var(--accent);
-  }
+}
+
+.newsletterButton:hover {
+  background-color: var(--accent);
 }
 
 .footerContent {
@@ -65,11 +74,9 @@
   gap: clamp(1rem, 0.857rem + 0.71vw, 2rem);
 }
 
-.footerContentTopSocial {
-  svg {
-    font-size: clamp(1rem, 0.886rem + 0.57vw, 1.8rem);
-    color: #000;
-  }
+.footerContentTopSocial svg {
+  font-size: clamp(1rem, 0.886rem + 0.57vw, 1.8rem);
+  color: #000;
 }
 
 .footerContentBottomSegment {

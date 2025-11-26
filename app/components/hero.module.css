@@ -47,16 +47,26 @@
   line-height: 1;
 }
 
+.heroExtraContent .button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 1;
+}
+
 .heroExtraDate,
 .heroExtraHashTag {
-  font-size: clamp(0.6rem, 0.491rem + 0.55vw, 0.9rem);
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  font-size: clamp(0.6rem, 0.514rem + 0.43vw, 1.2rem);
   line-height: 1;
 }
 
 @media (min-width: 1024px) {
   .hero {
     height: auto;
-    width: clamp(43.75rem, 18.75rem + 39.06vw, 81.25rem);
+    width: clamp(43.75rem, 20.917rem + 35.68vw, 78rem);
     margin: 0 auto;
     padding-top: clamp(8rem, 5.333rem + 4.17vw, 12rem);
   }
