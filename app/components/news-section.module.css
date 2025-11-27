@@ -184,6 +184,6 @@
   }
 
   .regularPostExcerpt {
-    font-size: clamp(0.6rem, -0.067rem + 1.04vw, 1.6rem);
+    font-size: clamp(0.6rem, 0.94vw, 1.5rem);
   }
 }
