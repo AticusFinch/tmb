@@ -38,20 +38,27 @@
 .platformExtra {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.8em;
   line-height: 1;
   margin-top: 1em;
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 0.9rem);
+}
+
+.platformExtraButton {
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 0.9rem);
 }
 
 @media (min-width: 1024px) {
   .platform {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 3rem;
     padding-top: clamp(8rem, 5.333rem + 4.17vw, 12rem);
     width: clamp(43.75rem, 20.917rem + 35.68vw, 78rem);
     height: auto;
     margin: 0 auto;
+    padding: 0;
+    padding-top: clamp(6rem, 4rem + 3.13vw, 9rem);
   }
 
   .platformImageContainer {
@@ -63,5 +70,17 @@
   .platformContent {
     grid-column: 1 / 2;
     grid-row: 1;
+  }
+
+  .platformTitle {
+    font-size: clamp(1.5rem, 0.5rem + 1.56vw, 3rem);
+  }
+
+  .platformTitleSpan {
+    font-size: clamp(2.4rem, 1.8rem + 3vw, 6.4rem);
+  }
+
+  .platformSubtitle {
+    font-size: clamp(1.2rem, 0.333rem + 1.35vw, 2.5rem);
   }
 }
