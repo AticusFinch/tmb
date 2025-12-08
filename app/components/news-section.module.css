@@ -1,7 +1,7 @@
 .newsSection {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: clamp(2rem, 0.857rem + 5.71vw, 10rem);
 }
 
 /* Main Post Styles */
@@ -77,7 +77,7 @@
   display: block;
   text-decoration: none;
   color: inherit;
-  width: clamp(13.75rem, 1.534rem + 61.08vw, 40.625rem);
+  width: clamp(18rem, 3.455rem + 72.73vw, 50rem);
   margin: 0 auto;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .regularPostTitle {
-  font-size: clamp(1rem, 0.409rem + 2.95vw, 2.3rem);
+  font-size: clamp(1.2rem, 0.609rem + 2.95vw, 2.5rem);
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 0.3em;
@@ -125,7 +125,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr;
-    gap: 1.5rem;
+    gap: 1.5em;
     padding-top: clamp(8rem, 5.333rem + 4.17vw, 12rem);
     width: clamp(43.75rem, 20.917rem + 35.68vw, 78rem);
     height: auto;

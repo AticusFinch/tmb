@@ -5,7 +5,7 @@ import Button from "./button";
 
 const Platform = () => {
   return (
-    <section className={styles.platform}>
+    <div className={styles.platform}>
       <div className={styles.platformImageContainer}>
         <Image
           src="/platform/6.jpg"
@@ -44,7 +44,7 @@ const Platform = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

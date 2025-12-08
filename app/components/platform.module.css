@@ -1,9 +1,10 @@
 .platform {
-  padding: 2em;
+  width: clamp(18rem, 3.455rem + 72.73vw, 50rem);
+  margin: 0 auto;
+  padding: 3em 0;
 }
 
 .platformImageContainer {
-  width: clamp(12.5rem, 1.136rem + 56.82vw, 37.5rem);
   height: auto;
   margin: 0 auto;
 }
@@ -12,17 +13,17 @@
   font-size: clamp(1.2rem, 0.943rem + 1.29vw, 3rem);
   font-weight: 700;
   line-height: 1;
-  margin: 1em 0;
+  margin: 1.5em 0;
   text-transform: uppercase;
   color: var(--accent);
 }
 
 .platformTitleSpan {
-  font-size: clamp(1.8rem, 1.4rem + 2vw, 4.6rem);
+  font-size: clamp(2.2rem, 0.927rem + 6.36vw, 5rem);
 }
 
 .platformSubtitle {
-  font-size: clamp(1rem, 0.714rem + 1.43vw, 3rem);
+  font-size: clamp(1.2rem, 0.609rem + 2.95vw, 2.5rem);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
@@ -32,7 +33,7 @@
   font-size: clamp(0.8rem, 0.625rem + 0.86vw, 2rem);
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .platformExtra {
@@ -40,7 +41,7 @@
   align-items: center;
   gap: 0.8em;
   line-height: 1;
-  margin-top: 1em;
+  margin-top: 2em;
   font-size: clamp(0.5rem, 0.318rem + 0.91vw, 0.9rem);
 }
 
@@ -51,7 +52,7 @@
 @media (min-width: 1024px) {
   .platform {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     gap: 3rem;
     padding-top: clamp(8rem, 5.333rem + 4.17vw, 12rem);
     width: clamp(43.75rem, 20.917rem + 35.68vw, 78rem);
@@ -73,14 +74,19 @@
   }
 
   .platformTitle {
-    font-size: clamp(1.5rem, 0.5rem + 1.56vw, 3rem);
+    font-size: clamp(1.3rem, 0.5rem + 1.25vw, 2.5rem);
+    margin-top: 0;
   }
 
   .platformTitleSpan {
-    font-size: clamp(2.4rem, 1.8rem + 3vw, 6.4rem);
+    font-size: clamp(2.2rem, -0.333rem + 3.96vw, 6rem);
   }
 
   .platformSubtitle {
     font-size: clamp(1.2rem, 0.333rem + 1.35vw, 2.5rem);
+  }
+
+  .platformText {
+    font-size: clamp(0.6rem, 0.94vw, 1.5rem);
   }
 }
