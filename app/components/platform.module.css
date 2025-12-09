@@ -58,7 +58,7 @@
 .embla {
   width: 100%;
   padding-top: 2em;
-  --slide-spacing: 2rem;
+  --slide-spacing: 2em;
   --slide-size: 50%;
 }
 
@@ -79,7 +79,6 @@
   grid-template-columns: 45% 55%;
   align-items: stretch;
   gap: 1.2em;
-  flex: 0 0 50%;
   min-width: 0;
   width: 100%;
   padding-top: var(--slide-spacing);
@@ -153,11 +152,6 @@
   font-size: clamp(0.6rem, 0.236rem + 1.82vw, 1.4rem);
   display: flex;
   gap: 1em;
-}
-
-.embla__slideMetaDate {
-  margin: 0 0 0.5em 0;
-  flex-shrink: 0;
 }
 
 .embla__next {
