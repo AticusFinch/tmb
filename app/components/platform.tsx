@@ -14,31 +14,31 @@ const slides = [
     title: "Transfeministička Platforma br. 6",
     author: "Jovan Džoli Ulićević",
     date: "27.11.2025.",
-    hashtags: "TFPlatforma",
+    hashtags: "#TFPlatforma",
   },
   {
     image: "/platform/21.png",
     type: "kolumna",
     title: "Transfeministička Platforma br. 6",
-    author: "Jovan Džolić Uliće",
+    author: "Jovan Džolić Ulićević",
     date: "27.11.2025.",
-    hashtags: "TFPlatforma",
+    hashtags: "#TFPlatforma",
   },
   {
     image: "/platform/4.png",
     type: "kolumna",
     title: "Transfeministička Platforma br. 6",
-    author: "Jovan Džolić Uliće",
+    author: "Jovan Džolić Ulićević",
     date: "27.11.2025.",
-    hashtags: "TFPlatforma",
+    hashtags: "#TFPlatforma",
   },
   {
     image: "/platform/21.png",
     type: "kolumna",
     title: "Transfeministička Platforma br. 6",
-    author: "Jovan Džolić Uliće",
+    author: "Jovan Džolić Ulićević",
     date: "27.11.2025.",
-    hashtags: "TFPlatforma",
+    hashtags: "#TFPlatforma",
   },
 ];
 
@@ -54,6 +54,7 @@ const Carousel = ({
     axis: isMobile ? "y" : "x",
     slidesToScroll: 2,
     dragFree: false,
+    watchDrag: true,
   });
 
   const onApiReadyRef = useRef(onApiReady);
